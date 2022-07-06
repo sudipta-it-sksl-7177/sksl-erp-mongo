@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    tomcat:
+      initial-size: 20
+      max-wait: 25000
+      max-active: 70
+      max-idle: 20
+      min-idle: 9
+      default-auto-commit: true
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration

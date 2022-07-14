@@ -8,6 +8,7 @@ plugins {
 group = 'org.sksl'
 version = 'web-app'
 sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
 
 repositories {
 	mavenCentral()

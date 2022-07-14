@@ -13,18 +13,18 @@ public interface LeaveApplicationMapper extends Function<List<Document>, List<Le
             List<LeaveApplRecord> records = new ArrayList<>();
             docs.forEach(doc -> records.add(
                     new LeaveApplRecord(
-                            doc.getInteger("slno", 1),
+                            doc.getInteger("slno", 0),
                             doc.getString("projcd"),
                             doc.getString("lvyear"),
                             doc.getString("lvmonth"),
                             doc.getString("emp_cd"),
-                            doc.getInteger("appl_no", 1),
+                            doc.getInteger("appl_no", 0),
                             doc.getString("finyear"),
                             doc.getString("emp_name"),
                             doc.getString("leave_type"),
                             doc.getDate("leave_start"),
                             doc.getDate("leave_end"),
-                            doc.getInteger("no_of_days", 1),
+                            doc.getInteger("no_of_days", 0),
                             doc.getString("go_to"),
                             doc.getString("reasons"),
                             doc.getString("charge_by"),

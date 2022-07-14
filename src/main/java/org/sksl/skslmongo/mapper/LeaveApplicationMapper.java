@@ -13,7 +13,7 @@ public interface LeaveApplicationMapper extends Function<List<Document>, List<Le
             List<LeaveApplRecord> records = new ArrayList<>();
             docs.forEach(doc -> records.add(
                     new LeaveApplRecord(
-                            doc.getInteger("slno", 0),
+                            doc.getInteger("slno", 1),
                             doc.getString("projcd"),
                             doc.getString("lvyear"),
                             doc.getString("lvmonth"),
